@@ -250,7 +250,7 @@ const SignupPage = ({ setUser }) => {
           </div>
 
           <Reaptcha
-            sitekey="6LdQuMIZAAAAAC4H4nZS0HWiMJQyWtEsZUvttIib"
+            sitekey="6LdYytEZAAAAANFl2b5oHNH8ZkKtLzLj319dC4e-"
             onVerify={onVerify}
           />
 
