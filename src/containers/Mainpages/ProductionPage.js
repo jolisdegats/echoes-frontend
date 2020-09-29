@@ -47,12 +47,10 @@ const ProductionRecord = ({ setUser }) => {
   useEffect(() => {
     const fetchData = async () => {
       const userInfo = JSON.parse(Cookies.get("userInfo"));
-      // console.log("hey");
+
       if (userInfo.token) {
-        // console.log("token here");
         const response = await axios.get(
           `${process.env.REACT_APP_URL}/api/episodes/${episodeId}`,
-          // `http://localhost:3310/api/episodes/${episodeId}`,
           {
             headers: { authorization: "Bearer " + userInfo.token },
           }
