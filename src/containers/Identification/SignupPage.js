@@ -20,6 +20,7 @@ const SignupPage = ({ setUser }) => {
   const history = useHistory();
 
   const onVerify = (recaptchaResponse) => {
+    console.log(recaptchaResponse);
     setCaptcha(true);
   };
 
