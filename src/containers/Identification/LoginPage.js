@@ -23,7 +23,6 @@ const LoginPage = ({ setUser }) => {
             password: password,
           }
         );
-
         if (response.data.token !== null) {
           const userInfo = {
             token: response.data.token,
