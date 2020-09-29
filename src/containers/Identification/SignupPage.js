@@ -20,7 +20,6 @@ const SignupPage = ({ setUser }) => {
   const history = useHistory();
 
   const onVerify = (recaptchaResponse) => {
-    console.log(recaptchaResponse);
     setCaptcha(true);
   };
 
@@ -31,7 +30,6 @@ const SignupPage = ({ setUser }) => {
         name &&
         firstName &&
         email &&
-        phone &&
         password === confirmPassword &&
         cgv &&
         captcha
@@ -80,7 +78,6 @@ const SignupPage = ({ setUser }) => {
     }
   };
 
-  console.log(process.env.REACT_APP_CAPTCHA);
   return (
     <div className="login-signup-container">
       <div className="sign-up">
@@ -88,7 +85,7 @@ const SignupPage = ({ setUser }) => {
 
         <p className="error">{error}</p>
 
-        <form className="signup-form">
+        <form className="signup-form" onSubmit={(event) => handleSubmit(event)}>
           <div className="twoCols">
             <div className="signupLine">
               <div>
@@ -257,7 +254,7 @@ const SignupPage = ({ setUser }) => {
             onVerify={onVerify}
           />
 
-          <button className="btn-60 pink" type="submit" onSubmit={handleSubmit}>
+          <button className="btn-60 pink" type="submit">
             S'enregistrer
           </button>
         </form>
