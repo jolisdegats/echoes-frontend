@@ -78,6 +78,8 @@ const SignupPage = ({ setUser }) => {
       }
     }
   };
+
+  console.log(process.env.REACT_APP_CAPTCHA);
   return (
     <div className="login-signup-container">
       <div className="sign-up">
@@ -250,7 +252,7 @@ const SignupPage = ({ setUser }) => {
           </div>
 
           <Reaptcha
-            sitekey="6LdYytEZAAAAANFl2b5oHNH8ZkKtLzLj319dC4e-"
+            sitekey={process.env.REACT_APP_CAPTCHA}
             onVerify={onVerify}
           />
 
