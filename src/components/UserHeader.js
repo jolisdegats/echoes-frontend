@@ -61,15 +61,7 @@ const UserHeader = ({ setUser }) => {
                 history.push("/account");
               }}
             >
-              mon compte
-            </li>
-            <li
-              className="redirect-link"
-              onClick={() => {
-                history.push("/facturation");
-              }}
-            >
-              mes factures
+              Mon compte
             </li>
             <li
               className="disconnect-link"
@@ -79,7 +71,7 @@ const UserHeader = ({ setUser }) => {
                 setUser(null);
               }}
             >
-              se deconnecter
+              Se deconnecter
             </li>
           </ul>
         </div>

@@ -19,11 +19,11 @@ const CheckoutPage = ({ setUser, location }) => {
   const userToken = userInfo.token;
 
   // States
-  const [clientInfos, setClientInfos] = useState();
-  const [voice, setVoice] = useState();
-  const [title, setTitle] = useState();
-  const [amount, setAmount] = useState();
-  const [data, setData] = useState();
+  const [clientInfos, setClientInfos] = useState([]);
+  const [voice, setVoice] = useState("");
+  const [title, setTitle] = useState("");
+  const [amount, setAmount] = useState(0);
+  const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   // Variables

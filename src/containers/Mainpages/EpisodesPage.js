@@ -7,15 +7,14 @@ import EachEpisodes from ".././../components/EachEpisodes";
 import Loader from "../../components/Loader";
 
 const EpisodePage = ({ setUser }) => {
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  const userInfo = JSON.parse(Cookies.get("userInfo"));
   const [reloadDelete, setreloadDelete] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
-      const userInfo = JSON.parse(Cookies.get("userInfo"));
-
       const response = await axios.get(
         `${process.env.REACT_APP_URL}/api/episodes`,
         {
@@ -26,10 +25,11 @@ const EpisodePage = ({ setUser }) => {
       );
 
       setData(response.data);
+      setreloadDelete(false);
       setIsLoading(false);
     };
     fetchData();
-  }, [reloadDelete]);
+  }, [reloadDelete, userInfo]);
 
   return isLoading ? (
     <Loader></Loader>
