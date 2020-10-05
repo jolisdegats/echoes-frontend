@@ -7,7 +7,7 @@
 <br/>
 <h1>Echoes MVP project (React/Node)</h1>
 <br/>
-<p> Professional fullstack project build for a French startup. We were a team of 4 devs and I personnaly handled the backend and most of the backoffice implementation. You can find the Frontend code <a href="https://github.com/jolisdegats/echoes-frontend"> here</a> and the Backend code <a href="https://github.com/jolisdegats/echoes-api"> here</a>.<p><p>
+<p> Professional fullstack project build for a French startup. We were a team of 4 devs and I personnaly handled the backend and most of the backoffice implementation. You can find the Frontend code <a href="https://github.com/jolisdegats/echoes-frontend"> here</a> and the Backend code <a href="https://github.com/jolisdegats/echoes-api"> here</a>.</p><p>
 This demo of the project is currently hosted on Netlify (frontend) and Heroku (backend). Have a look at the live demos below and feel free to give me some feedback. </p>
 
 <h3>
