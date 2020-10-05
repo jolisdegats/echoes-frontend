@@ -15,6 +15,9 @@ This demo of the project is currently hosted on Netlify (frontend) and Heroku (b
 </h3>
 <p>To access the demo, please use the following credentials or create a new account:</p>
 <p><i>admin : demo@mail.com // password : demo</i><p>
+<p><i>Please note that Stripe is in test mode. If you'd like to test the demo with paiement, please use the following credit card credentials :  <br/>
+Card Number : 4242424242424242 / Date : 04/24 / Security Code : 242 / Postcode : 75000</i></p>
+<br/>
 <h3>
 <a href="https://app.forestadmin.com/login">Live Demo Backoffice</a>
 </h3>
@@ -26,6 +29,17 @@ This demo of the project is currently hosted on Netlify (frontend) and Heroku (b
 <a href="https://echoes-jolisdegats.netlify.app/ ">
   <img src="https://res.cloudinary.com/dqp905mfv/image/upload/v1601623409/portfolio/echoes/GIF_22-09-2020_16-25-17_pmlik9.gif" alt ="Echoes Portfolio Project - Banner"  />
   </a>
+  <br/>
+    <br/>
+<h2>Stack</h2>
+
+<p>Made with the following stack:<br/>
+Frontend : React, axios, diff, emailjs, js-cookie, react-router-dom, react-fontawesome, reaptcha, rc-slider, words-count<br/>
+Backend : NodeJS, body-parser, cors, crypto-js, dotenv, express, mongoose, nodemailer, stripe, uid2</p>
+ <br/>
+
+  
+  
 </p><h3>COMING SOON...</h3>
 
 <br/>
